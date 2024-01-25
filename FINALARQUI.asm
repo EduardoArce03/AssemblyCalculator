@@ -37,7 +37,9 @@
     mov dx,OFFSET input
     mov ah,09h
     int 21h
+    
     ;PRIMER NUMERO
+    
     mov ah,01h
     int 21h
     sub al, 30h
@@ -51,9 +53,6 @@
     mov nr2,cl
     
     ;SEGUNDO NUMERO
-    
-    
-    
     
     mov dx,OFFSET input
     mov ah,09h
@@ -70,8 +69,6 @@
     sub al,30h
     mov nr4, al
     add cl,al
-    
-    
     
     ;Suma
     
@@ -94,21 +91,18 @@
     mov n1,ah
     mov n2,al
     
-    
-    
-    
     mov ah,02h
-    mov dl,[n1]
+    mov dl,n1
     add dl,30h
     int 21h
     
     mov ah,02h
-    mov dl,[n2]
+    mov dl,n2
     add dl,30h
     int 21h
     
     mov ah,02h
-    mov dl,[x]
+    mov dl,x
     add dl,30h
     int 21h
     
@@ -150,12 +144,12 @@
     
     
     mov ah,02h
-    mov dl,[m2]
+    mov dl,m2
     add dl,30h
     int 21h
     
     mov ah,02h
-    mov dl,[m1]
+    mov dl,m1
     add dl,30h
     int 21h
     
@@ -237,19 +231,19 @@
     mov rm4,cl
     
     mov ah,02h
-    mov dl, [rm4]
+    mov dl, rm4
     add dl,30h
     int 21h
     mov ah,02h
-    mov dl, [rm3]
+    mov dl, rm3
     add dl,30h
     int 21h
     mov ah,02h
-    mov dl, [rm2]
+    mov dl, rm2
     add dl,30h
     int 21h
     mov ah,02h
-    mov dl, [rm1]
+    mov dl, rm1
     add dl,30h
     int 21h
     
@@ -289,40 +283,10 @@
      
     
     mov ah,02h
-    mov dl,[m2]
+    mov dl,m2
     add dl,30h
     int 21h
     mov ah,02h
-    mov dl,[m1]
+    mov dl,m1
     add dl,30h
     int 21h
-
-    
-    
-    
-    
-    
-   
-    
-    
-    
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
